@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Details - Jonoshokti</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="issue-details-container">
+        <h1 id="issue-title"></h1>
+        <p id="issue-description"></p>
+        <p><strong>Location:</strong> <span id="issue-location"></span></p>
+        <p><strong>Status:</strong> <span id="issue-status"></span></p>
+        <p><strong>Upvotes:</strong> <span id="upvote-count"></span> | <strong>Downvotes:</strong> <span id="downvote-count"></span></p>
+
+        <!-- Move buttons section here -->
+        <div id="buttons-section">
+            <button id="upvote-btn">Upvote</button>
+            <button id="downvote-btn">Downvote</button>
+        </div>
+
+        <!-- Comments section below the buttons -->
+        <div id="comments-section">
+            <h3>Comments (<span id="comment-count">0</span>)</h3>
+            <div id="comment-list"></div>
+
+            <textarea id="comment-text" placeholder="Add a comment"></textarea>
+            <button id="add-comment-btn">Add Comment</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
